@@ -39,13 +39,13 @@ public class ImageFragment extends Fragment {
     @ViewInject(R.id.progress_webp)
     private ProgressBar progressBarWebP;
     ImageOptions options = new ImageOptions.Builder().setRadius(DensityUtil.dip2px(5))
-            .setLoadingDrawableId(R.mipmap.ic_launcher).setUseMemCache(true)
+            .setLoadingDrawableId(R.mipmap.ic_launcher).setUseMemCache(true).setIgnoreGif(false)
             .setFailureDrawableId(R.mipmap.ic_launcher).build();
 
-    String[] urls={
+    String[] urls = {
             "https://raw.githubusercontent.com/zhonghangIT/Image/master/Frame.png",
             "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/coder.gif",
-
+            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/coder.webp"
     };
 
     @Nullable
@@ -112,7 +112,7 @@ public class ImageFragment extends Fragment {
 
             @Override
             public void onLoading(long total, long current, boolean isDownloading) {
-
+                progressBarGif.setProgress((int) ((float) current / total * 100));
             }
 
             @Override
@@ -152,7 +152,7 @@ public class ImageFragment extends Fragment {
 
             @Override
             public void onLoading(long total, long current, boolean isDownloading) {
-
+                progressBarWebP.setProgress((int) ((float) current / total * 100));
             }
 
             @Override
