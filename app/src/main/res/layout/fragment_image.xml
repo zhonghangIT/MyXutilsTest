@@ -32,6 +32,23 @@
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/button_webp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示WebP" />
+
+        <ImageView
+            android:id="@+id/imageview_webp"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_webp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
             android:id="@+id/button_gif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,21 +65,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/button_webp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="显示WebP" />
 
-        <ImageView
-            android:id="@+id/imageview_webp"
-            android:layout_width="200dp"
-            android:layout_height="200dp" />
-
-        <ProgressBar
-            android:id="@+id/progress_webp"
-            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
     </LinearLayout>
 </ScrollView>

@@ -43,9 +43,9 @@ public class ImageFragment extends Fragment {
             .setFailureDrawableId(R.mipmap.ic_launcher).build();
 
     String[] urls = {
-            "https://raw.githubusercontent.com/zhonghangIT/Image/master/Frame.png",
-            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/coder.gif",
-            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/coder.webp"
+            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/flower.jpg",
+            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/flower.webp",
+            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/coder.gif"
     };
 
     @Nullable
@@ -98,7 +98,7 @@ public class ImageFragment extends Fragment {
 
     @Event(R.id.button_gif)
     private void bindGif(View view) {
-        x.image().bind(imageViewGif, urls[1], options, new Callback.ProgressCallback<Drawable>() {
+        x.image().bind(imageViewGif, urls[2], options, new Callback.ProgressCallback<Drawable>() {
             @Override
             public void onWaiting() {
 
@@ -139,7 +139,7 @@ public class ImageFragment extends Fragment {
 
     @Event(R.id.button_webp)
     private void bindWebP(View view) {
-        x.image().bind(imageViewWebP, urls[2], options, new Callback.ProgressCallback<Drawable>() {
+        x.image().bind(imageViewWebP, urls[1], options, new Callback.ProgressCallback<Drawable>() {
             @Override
             public void onWaiting() {
 
