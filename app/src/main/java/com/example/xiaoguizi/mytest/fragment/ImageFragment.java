@@ -44,6 +44,8 @@ public class ImageFragment extends Fragment {
 
     String[] urls={
             "https://raw.githubusercontent.com/zhonghangIT/Image/master/Frame.png",
+            "https://raw.githubusercontent.com/zhonghangIT/MyXutilsTest/master/testimage/coder.gif",
+
     };
 
     @Nullable
